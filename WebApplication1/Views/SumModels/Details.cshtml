@@ -1,0 +1,58 @@
+﻿@model WebApplication1.Models.SumModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SumModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.costPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.viewYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.viewYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.truckAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.truckAge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salvageValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salvageValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalDep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalDep)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
